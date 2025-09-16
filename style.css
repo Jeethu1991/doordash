@@ -415,7 +415,7 @@ body {
     border: 1px solid var(--btn-icon-hover);
     padding: 20px;
     background-color: var(--maincontent-border);
-    margin: 19px 20px 0px;
+    margin: 20px 20px 0px;
     flex: 1 0 auto;
     max-width: 400px;
 }
@@ -671,8 +671,7 @@ body {
     border-radius: 9999px;
     border: none;
     max-width: 100%;
-}
- 
+} 
 
 /* --------------------------------------------------  Services  -------------------------------------------------- */
 
@@ -1056,17 +1055,18 @@ body {
     text-align: left;
     display: block;
     flex-direction: column;
+    margin-top: 2px;
 }
 
 .lblshop1{
     text-align: left;
     color: var(--text-color-default);
-    font-family: medium;
+    font-family: bold;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.01px;
-    margin-top: 20px;
+    margin-top: 22px;
     display: flex;
     max-width: 86%;
 }
@@ -1085,11 +1085,11 @@ body {
 
 .btnshop{
     color: var(--btn-txt-color);
-    font-family: medium;
+    font-family: bold;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.01px;
     text-align: center;
     justify-content: center;
     min-width: 0px;
@@ -1130,7 +1130,6 @@ body {
 .scrollgift_dos{
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
     background-color: var(--webcolor);
 }
 
@@ -1521,7 +1520,6 @@ body {
     display: block;
 }
 
-
 /* see more */
 
 .seemore{
@@ -1637,7 +1635,7 @@ footer{
 .available svg{
     height:48px;
     width: 144px;
-    fill: var(--footer-list-color);
+    fill: var(--btn-txt-color);
     x: 0px;
     y: 0px;
     margin-top: 4px;
@@ -1684,6 +1682,10 @@ footer{
     justify-content: center;
     gap: 12px;    
     margin-top: 8px;
+}
+
+.knowus h2{
+    margin-bottom: 16px;
 }
 
 .helpyou{
@@ -1897,7 +1899,7 @@ footer{
     }
 
     .tab_topstrip {
-        background-image: url("images/hero_desktop.png");
+        background-image: url("images/hero_mobile.png");
         height: 650px;
         padding: 0px 8px;
         display: flex;
@@ -2050,8 +2052,7 @@ footer{
 
     .btn_tabtxtnext{
         display: flex;
-        justify-content: flex-end;
-        
+        justify-content: flex-end;        
     }
 
     .btn_tabnext {
@@ -2088,8 +2089,7 @@ footer{
         justify-content: flex-start;
         border-radius: 9999px;
         background-color: var(--btn-txt-color);
-        border: none;
-        
+        border: none;        
     }
 
     .btn_tabsignin svg{
@@ -2493,6 +2493,7 @@ footer{
         white-space: nowrap;
         border-radius: 9999px;
         border: none;
+        padding-top: 1px;
     }
 
     .btn_tabflowers{
@@ -2512,6 +2513,7 @@ footer{
         white-space: nowrap;
         border-radius: 9999px;
         border: none;
+        padding-top: 1px;
     }
 
     .btn_tabminibar{
@@ -2760,7 +2762,8 @@ footer{
 
     .neighborhood{
         max-width: 1130px;
-        padding: 48px 0;
+        padding: 47px 0;
+        margin-bottom: 1px;
     }
 
     .neighborhood h2{
@@ -2792,15 +2795,17 @@ footer{
         margin: 0;
         box-shadow: none;
         border-bottom: 3px solid var(--text-color-default);
-    }   
+    }  
+    
+    .lblcities{
+        padding-top: 1px;
+    }
 
     .tab_cuisines, .tab_chains{
         padding: 0;
         margin: 0;
         box-shadow: none;
-        border-bottom: 2px solid var(--line_color);
-        
-
+        border-bottom: 2px solid var(--line_color);     
     }
 
     /* ----------------------------------------- Footer ----------------------------------------- */
@@ -2974,8 +2979,7 @@ footer{
         justify-content: flex-start;
         border-radius: 9999px;
         background-color: var(--btn-txt-color);
-        border: none;
-        
+        border: none;        
     }
 
     .btn_desksignin svg{
@@ -3095,8 +3099,8 @@ footer{
     }
 
     .neighborhood h2{
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 22px;
     }
 
    /* -------------------------------------------- desktop footer --------------------------------------------  */
@@ -3148,7 +3152,6 @@ footer{
 
     .business h2{
         margin-bottom: 11px;
-        /* transform: translatey(0.9px); */
     }
 
     .business span{
@@ -3186,9 +3189,7 @@ footer{
 
 }
 
-@media screen and (min-width:1184px){
-
- 
+@media screen and (min-width:1184px){ 
 
     .tab_topstrip{
         width: 100%;
@@ -3370,23 +3371,12 @@ footer{
         flex-direction: column;
     }
 
-    .popularcatogry {
-        padding: 31.9px 0;
-        padding-bottom: 36px;
-    }
-
-    .popularcatogry h2{
-        margin-bottom: 10.5px;
-        /* margin-top: 1px; */
-    }
-
-    .popularcatogry span{
-        margin-top: 5px;
-        margin-bottom: 3px;
+    .tab_available{
+        transform: translateY(4.5px);
     }
 
     .available {
-        padding-top: 25px;
+        padding-top: 25.9px;
     }
 
     .business {
@@ -3400,8 +3390,9 @@ footer{
     }
 
     .business span{
-        margin-top: 3.45px;
-        padding-bottom: 4.5px;
+        margin-top: 8px;
+        padding-bottom: 0px;
+        transform: translateY(-5px);
     }
 
     .details{
@@ -3417,8 +3408,8 @@ footer{
     }
 
     .compdetails{
-        padding-top: 31px;
-        padding-bottom: 28.3px;
+        padding-bottom: 29px;
+        padding-top: 35px;
     }
 
 }
@@ -3460,7 +3451,7 @@ footer{
     }
 
     .img_tabdoor{
-        width: 546.25px;
+        width: 695.021px;
     }
 
     .tab_scrollgiftdos{
@@ -3468,29 +3459,33 @@ footer{
         margin-right: auto;
     }
 
-     .tab_signin{
-        width: 100%;
+     .tab_signin{        
         margin-left: auto;
         margin-right: auto;
+        gap: 77px;
     }
 
     .img_tabsigndash{
-        width: 695.021px;
+        max-width: 695.021px;
     }
 
      .tab_growbusi{
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%;
+        margin-left: 108px;
+        max-width: 1202px;
+    }            
+
+    .img_tabgrowdash{
+        width: 724px;
     }
 
-    .img_tabgrowbusi{
-        max-width: 724px;
+    .neighborhood h2{
+        font-size: 32px;
+        line-height: 40px;
     }
 
     /* ---------------------------------------- footer ---------------------------------------- */
 
-    .popularcatogry {
+    /* .popularcatogry {
         padding: 32.5px 0;
         padding-bottom: 36px;
     }
@@ -3505,18 +3500,18 @@ footer{
     .business span{
         margin-top: 2.45px;
         padding-bottom: 5.5px;
-    }
+    } */
 
-    .compdetails{
+    /* .compdetails{
         padding-top: 31.5px;
-    }
+    } */
 
-    .txtboxfooter{
-        margin-top: 0px;
+    .lbldropdowntext{
+        margin-top: 2px;
     }
 
     .icons {
-        margin-bottom: 1.2px;
+        margin-bottom: 1px;
     }
 
 }
@@ -3535,6 +3530,10 @@ footer{
 
     .imgdesccrave{
         width: 699px;
+    }
+
+    .colordelivery {
+        max-width: 100%;
     }
 
     .lessdelivery{
@@ -3579,9 +3578,28 @@ footer{
         width: 724px;
     }
 
-    .neighborhood h2{
+    /* .neighborhood h2{
         font-size: 18px;
         line-height: 22px;
+    } */
+
+    .popularcatogry{
+        padding-top: 31px;
+        padding-bottom: 35px;
+        transform: translateY(2px);
+    }
+
+    .business h2{
+        margin-top: 1px;
+        margin-bottom: 11px;
+    }
+
+    .available{
+        padding-top: 24px;
+    }
+
+    .compdetails{
+        padding-bottom: 28px;
     }
 
     .txtboxfooter{
