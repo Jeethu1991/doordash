@@ -1,0 +1,3602 @@
+/* ----------------------------------------- Main Declarations ----------------------------------------- */
+:root {
+    --text-color-default: #191919ff;
+    --text-color-soft: #606060ff;
+    --btn-color-background: #eb1700ff;
+    --btn-txt-color: #ffffffff;
+    --btn-shadow-color: #19191900;
+    --btn-icon-hover: #f1f1f1ff;
+    --iconstar-ranking: #ebb11eff;
+    --maincontent-border: #f7f7f7ff;
+    --webcolor: #fef1ee;
+    --grocery-color: #1E1E1E99;
+    --footer-list-color:#C4C4C4;
+    --available-color:#494949;
+    --txt-terms_conditions:#c4c4c4;
+    --line_color:#f2f2f2;
+}
+
+@font-face {
+    font-family: bold;
+    src: url("Font/TTNorms-Bold.woff2");
+}
+
+@font-face {
+    font-family: medium;
+    src: url("Font/TTNorms-Medium.woff2");
+}
+
+@font-face {
+    font-family: extrabold;
+    src: url("Font/TTNorms-ExtraBold.woff2");
+}
+
+@font-face {
+    font-family: regular;
+    src: url("Font/TTNorms-Regular.woff2");
+}
+
+@font-face {
+    font-family: normal;
+    src: url("Font/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2");
+}
+
+@font-face {
+    font-family: small;
+    src: url("Font/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------- Main head tag ----------------------------------------- */
+
+.grid {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 8px;
+    top: 10px;
+    margin-top: 16px;
+}
+
+.doordashicon {
+    flex-shrink: 0;
+    border: 1px solid var(--btn-icon-hover);
+    border-radius: 10px;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.h2span {
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+    position: relative;
+    top: -1px;
+}
+
+.wrapperspan {
+    color: var(--text-color-soft);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-align: left;
+    position: relative;
+    top: -1px;
+}
+
+.wrapspan {
+    margin-left: 4px;
+    color: var(--text-color-soft);
+    font-family: medium;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    position: relative;
+    top: -1px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: left;
+    position: relative;
+    left: 2px;
+}
+
+.ratingstar {
+    position: relative;
+    top: -1px;
+    margin-left: 0px 2px;
+}
+
+.rating h3 {
+    color: var(--text-color-soft);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0px;
+    letter-spacing: -0.01px;
+    display: flex;
+    text-align: center;
+}
+
+.btnwrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btnopen {
+    background-color: var(--btn-color-background);
+    color: var(--btn-txt-color);
+    padding: 5px 12px;
+    border-radius: 36px;
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: flex;
+    border-width: inherit;
+}
+
+/* ----------------------------------------- Main image and content ----------------------------------------- */
+
+.maindisp {
+    background-image: url("images/hero_desktop.png");
+    height: 550px;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+.btnmain {
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 8px;
+    top: 15px;
+    padding-right: 24px;
+    padding-left: 16px;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.login {
+    background-color: var(--btn-txt-color);
+    min-height: 40px;
+    border-radius: 9999px;
+    padding: 0px 12px;
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    flex-direction: row;
+    border-width: inherit;
+    position: relative;    
+}
+
+.openapp {
+    background-color: var(--btn-color-background);
+    color: var(--btn-txt-color);
+    min-height: 40px;
+    border-radius: 9999px;
+    padding: 0px 12px;
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    flex-direction: row;
+    border-width: inherit;
+    min-width: 0px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.wrappermain {
+    position: absolute;
+    top: 156px;
+    left: -0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.heading {
+    fill: var(--btn-txt-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 20px
+}
+
+
+.lblmain {
+    color: var(--btn-txt-color);
+    text-align: center;
+    font-family: TTNormsProCond-Blk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    justify-content: center;
+    display: block;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+.maintxtboxgrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.txtcenter {
+    border: none;
+    font-family: medium;
+    font-size: 16px;
+    z-index: 1;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    color: var(--text-color-default);
+    appearance: none;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 12px;
+}
+
+.txtmainbox {
+    border-radius: 32px;
+    align-items: center;
+    display: flex;
+    background-color: var(--btn-txt-color);/* main textbox  */
+    padding: 6px 16px;
+    flex-direction: row;
+    min-height: 32px;
+}
+
+.iconsearch {
+    display: block;
+    margin-right: 12px;
+    border-radius: 32px;
+    color: var(--text-color-default);
+    position: relative;
+    top: 2px;
+}
+
+.btnnext {
+    width: 40px;
+    display: flex;
+    min-height: 40px;
+    border-radius: 9999px;
+    border: none;
+    background-color: var(--btn-color-background);
+    color: var(--btn-txt-color);
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.mainbtns{
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 16px;
+    max-width: 100%;
+}
+
+.btnlogin{
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 12px;
+    position: relative;
+    min-height: 32px;
+    border-radius: 9999px;
+    border: none;
+    background-color: var(--btn-txt-color);
+    max-width: 100%;
+}
+
+.btnloginicon{
+    width: 16;
+    height: 16;
+    fill: none;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 2;
+    margin-right: 4px;
+}
+
+.btnlocationicon{
+    width: 16;
+    height: 16;
+    fill: none;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 2;
+    margin-right: 4px;
+}
+
+.btncurntloc{
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: flex;
+    justify-content: 4px;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 12px;
+    position: relative;
+    min-height: 32px;
+    border-radius: 9999px;
+    border: none;
+    background-color: var(--btn-txt-color);
+    width: 100%;
+    margin-left: 4px;
+}
+
+/* ------------------  Continue in App   --------------------------- */
+
+.middlecontent{
+    border-radius: 12px;
+    border: 1px solid var(--btn-icon-hover);
+    padding: 20px;
+    background-color: var(--maincontent-border);
+    margin: 19px 20px 0px;
+    flex: 1 0 auto;
+    max-width: 400px;
+}
+
+.middlecontentwrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.middleicon{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid var(--btn-icon-hover);
+    background-color: var(--btn-txt-color);
+    margin-right: 8px;
+    padding: 8px;
+    text-align: left;
+}
+
+.middleicon svg{
+    width: 40px;
+    height: 40px;
+    fill:none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content h1{
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    max-width: 100%;
+    top: 0px;
+}
+
+.content h2{
+    margin-left: 4px;
+    margin-top: 2px;
+    color: var(--text-color-soft);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    max-width: 100%;
+    text-align: left;
+}
+
+.content_rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.content_rating svg{
+    margin: 0px 2px;
+    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    fill: none;
+    text-align: left;
+}
+
+.content_rating span{
+    margin-left: 4px;
+    color: var(--text-color-soft);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.btncontinue{
+    background-color: var(--btn-color-background);
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;    
+    width: 100%;
+    padding: 4px 12px;
+    margin-top: 16px;
+    position: relative;
+    display: block;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    text-align: center;
+    border:none;
+    white-space: nowrap;
+    padding-top: 5px;
+}
+
+/* --------------------------------------------------  Popup Banner  -------------------------------------------------- */
+
+.popup{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    background-color: var(--btn-txt-color);
+    box-shadow: var(--btn-icon-hover) 0px 0px 0px 1px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 12px 8px;
+    width: 100%;
+}
+
+.popup.visible {
+    transform: translateY(0);
+}
+
+.txtpopup{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    border-radius: 32px;
+    padding: 6px 16px;
+    border:none;
+    box-shadow: inset 0 0 0 1px var(--btn-icon-hover);
+    background-color: var(--btn-txt-color);
+    width: 100%;  
+    padding-right: 15px;  
+}
+
+.icon_search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.icon_search svg{
+    width: 24px;
+    height: 24px;
+    fill: none;
+}
+
+.txtaddress{
+    width: 100%;
+}
+
+.txtadd{
+    text-overflow: ellipsis;
+    font-family: medium;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    display: flex;
+    color: var(--text-color-default);
+    flex-grow: 1;
+    padding-right: 13px;
+    overflow: hidden;
+    width:100%;
+    border: none;
+}
+
+.btnpopup_txtopen{
+    background-color: var(--btn-color-background);
+    position: relative;
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 9999px;
+    border: none;
+    text-align: center;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    max-width: 40px;
+}
+
+.icon_btnopen{
+    fill: var(--btn-txt-color);
+    width: 24;
+    height: 24;
+}
+
+.btnpopup{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    transform: translateX(0.5px);
+}
+
+.btnpopup_login{
+    color: var(--text-color-default);
+    background-color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 1;
+    padding: 0px 12px;
+    position: relative;
+    min-height: 32px;
+    border-radius: 9999px;
+    border: none;   
+}
+
+.btnpopup_openapp{
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    background-color: var(--btn-color-background);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 1;
+    padding: 0px 12px;
+    position: relative;
+    border-radius: 9999px;
+    border: none;
+    max-width: 100%;
+}
+ 
+
+/* --------------------------------------------------  Services  -------------------------------------------------- */
+
+.services{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px ;
+    margin:40px 0;
+}
+
+.services img{
+    height: 88px;
+    width: 88px;
+}
+
+.services h2{
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+    text-align: left;
+    display: block;
+    flex-direction: row;
+}
+
+.services h3{
+    color: var(--text-color-default);
+    font-family: medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    text-align: left;
+    display: block;
+    flex-direction: row;
+}
+
+.Start{
+    background-color: var(--btn-txt-color);
+    color: var(--btn-color-background);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: flex;
+    justify-content: center;
+    border: inherit;
+    align-items: center;
+    gap: 4px;
+    margin-top: 12px;
+}
+
+.imgscooter{
+    margin-right: 32px;
+}
+
+.imgmerchant{
+    margin-right: 32px;
+}
+
+.imgexperience{
+    margin-right: 32px;
+}
+
+.scooter{
+    display: flex;
+    flex-direction: row;
+    min-width: 360px;
+    padding: 16px 16px;
+}
+
+.merchant{
+    display: flex;
+    flex-direction: row;
+    min-width: 360px;
+    padding: 16px 16px;
+}
+
+.experience{
+    display: flex;
+    flex-direction: row;
+    min-width: 360px;
+    padding: 16px 16px;
+}
+
+
+/* -------------------------------------------------- Delivery Services  -------------------------------------------------- */
+
+.deliveryservi{
+    min-width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+    margin-bottom: -300px;
+    z-index: 999;
+}
+
+.imgcravdelivery{
+    width: 100%;
+}
+
+.imgcrave{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgdesccrave{
+    display: none;
+}
+
+.imgtablesscrave{
+    display: none;
+}
+
+.cravdis{
+    display: flex;
+    flex-direction: column; 
+}
+
+.cravdis h2{
+    text-align: left;
+    margin-top: 20px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.cravdis h3{
+    text-align: left;
+    margin-top: 10px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing:-0.01px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.cravdis span{
+    margin-top: 10px;
+    color: var(--text-color-default);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cravdis button{
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    justify-content: center;
+    min-width: 0px;
+    position: relative;
+    min-height: 32px;
+    background-color: var(--btn-color-background);
+    border: inherit;
+    padding: 0px 12px;
+    align-items: center;
+    border-radius: 36px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.colordelivery{
+    background-color: var(--webcolor);
+    position: relative;
+    z-index: 1;
+    padding-top: 300px;
+}
+
+.lessdelivery{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+}
+
+.imglessdelivery{
+    width: 100%;
+}
+
+.imglesscrave{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lessdis{
+    display: flex;
+    flex-direction: column;
+}
+
+.lessdis h2{
+    text-align: left;
+    margin-top: 20px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.lessdis span{
+    margin-top: 10px;
+    color: var(--text-color-default);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lessdis button{
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    justify-content: center;
+    min-width: 0px;
+    position: relative;
+    min-height: 32px;
+    background-color: var(--btn-color-background);
+    border: inherit;
+    padding: 0px 12px;
+    align-items: center;
+    border-radius: 36px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grocery{
+    background: url(images/grocery_desktop.png) center center / cover;
+    position: relative;
+    height: 350px;
+}
+
+.grocerycolors{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--grocery-color); 
+    z-index: 1;
+}
+
+.grocerylbl{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    max-height: 210px;
+}
+
+.lblgrocery{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lblgrocerydis1{
+    margin-top: 10px;
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+} 
+
+.lblgrocerydis2{
+    margin-top: 10px;
+    text-align: center;
+    color: var(--btn-txt-color);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btngrocery{
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    padding: 0px 12px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 32px;
+    align-items: center;
+    border-radius: 36px;
+    background-color: var(--btn-color-background);
+    border: inherit;
+    margin-top: 20px;
+}
+
+ /* ----------------------------------------- Shop DoorStep -----------------------------------------  */
+
+.shopdoorstep{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.imgdoorstep{
+    width: 100%;
+}
+
+.imgdoor{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 100%;
+}
+
+.lblshopdoorstep{
+    text-align: left;
+    display: block;
+    flex-direction: column;
+}
+
+.lblshop1{
+    text-align: left;
+    color: var(--text-color-default);
+    font-family: medium;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    margin-top: 20px;
+    display: flex;
+    max-width: 86%;
+}
+
+.lblshop2{
+    text-align: left;
+    margin-top: 10px;
+    color: var(--text-color-default);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: flex;
+}
+
+.btnshop{
+    color: var(--btn-txt-color);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    justify-content: center;
+    min-width: 0px;
+    position: relative;
+    min-height: 32px;
+    background-color: var(--btn-color-background);
+    border: inherit;
+    padding: 0px 12px;
+    align-items: center;
+    border-radius: 36px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------------- Gifts and Dos -----------------------------------------  */
+
+.gift_dos{
+    display: flex;
+    justify-content: center;
+    background-color: var(--webcolor);
+    padding: 40px 20px 20px;
+}
+
+.lblgift_dos{
+    text-align: center;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    max-width: 300px;
+}
+
+/* ----------------------------------------- Gifts and Dos scroll ----------------------------------------- */
+
+.scrollgift_dos{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    background-color: var(--webcolor);
+}
+
+.scrollgift_dos img{
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.scrollgift_dos h2{
+    text-align: center;
+    max-width: 90%;
+    margin-top: 20px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.scrollgift_dos span{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--text-color-default);
+    font-family: Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.scrollgift_dos button{
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    justify-content: center;
+    min-width: 0px;
+    position: relative;
+    min-height: 32px;
+    background-color: var(--btn-color-background);
+    border: inherit;
+    padding: 0px 12px;
+    align-items: center;
+    border-radius: 36px;
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: column; 
+}
+
+.beautyess{
+    margin-left: 5%;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    min-width: 90%;
+}
+
+.lblbeauty{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgbeauty{
+    width: 100%;
+}
+
+.flowers{
+    margin-left: 5%;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+}
+
+.lblflowers{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgflowers{
+    width: 100%;
+}
+
+.minibar{
+    margin-left: 5%;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+}
+
+.lblminibar{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgminibar{
+    width: 100%;
+}
+
+.lblminibar_age{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.pets{
+    margin-left: 5%;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+}
+
+.lblpets{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgpets{
+    width: 100%;
+}
+
+/* ----------------------------------------- Unlock Oppertunities heading ----------------------------------------- */
+
+.unlockopp{
+    display: flex;
+    justify-content: center;
+    background-color: var(--btn-txt-color);
+    padding: 40px 20px 20px;
+}
+
+.lblunlockopp{
+    text-align: center;
+    max-width: 300px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+/* ----------------------------------------- Unlock Oppertunities ----------------------------------------- */
+
+.oppertunities{
+    min-width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.oppertunities h2{
+    text-align: left;
+    max-width: 90%;
+    margin-top: 20px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.oppertunities span{
+    margin-top:10px;
+    color: var(--text-color-default);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.oppertunities button{
+    color: var(--btn-txt-color);
+    font-family: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    justify-content: center;
+    min-width: 0px;
+    position: relative;
+    min-height: 32px;
+    background-color: var(--btn-color-background);
+    border: inherit;
+    padding: 0px 12px;
+    align-items: center;
+    border-radius: 36px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imggrowdash{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgsigndash{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.signin{
+    margin-bottom: -300px;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+    z-index: 999;
+}
+
+.lblgrowbusi{
+    min-width: 90%;
+    align-items: left;
+}
+
+.imgdash{
+    width: 100%;
+}
+
+.imggrowbusi{
+    width: 100%;
+}
+
+.growbusi{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+}
+
+/* ----------------------------------------- Get from Neighborhood ----------------------------------------- */
+
+.neighborhood{
+    padding: 24px 16px;
+}
+
+.neighborhood h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.getlist{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.btnselect{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.tab_cities{
+    border-bottom: 3px solid transparent;
+    box-shadow: 0 3px 0 var(--text-color-default);
+    padding-bottom: 11px;
+    box-sizing: border-box;
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--btn-txt-color);
+}
+
+.lblcities{
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.tab_cuisines{
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 2px 0 var(--btn-icon-hover);
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--btn-txt-color);
+}
+
+.lblcuisines{
+    color: var(--text-color-soft);
+    font-family: medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.tab_chains{
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 2px 0 var(--btn-icon-hover);
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--btn-txt-color);
+}
+
+.lblchains{
+    color: var(--text-color-soft);
+    font-family: medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.listcities{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.listcities span{
+    color: var(--text-color-default);
+    font-family: medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+
+/* see more */
+
+.seemore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.lblseemore{
+    margin-right: 8px;
+    color: var(--text-color-default);
+    font-family: bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.btnseemore{
+    position: relative;
+    margin: 0px;
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 9999px;
+    text-align: center;
+    background-color: var(--btn-icon-hover);
+    color: var(--text-color-default);
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+    /* ----------------------------------------- Footer ----------------------------------------- */
+/* ----------------------------------------- Footer section1 ----------------------------------------- */
+
+footer{
+    background-color: var(--text-color-default);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.footerdrdash{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popularcatogry{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section1, .section2, .section3{
+    padding-bottom: 12px;
+}
+
+.popularcatogry h2{
+    margin-bottom: 8px;
+    color: var(--btn-txt-color);
+    font-family: medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.popularcatogry span{
+    color: var(--footer-list-color);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;    
+    margin-top: 8px;
+}
+
+/* ----------------------------------------- Footer section2 -----------------------------------------  */
+
+.available{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.available a{
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: var(--available-color);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 52px;
+    width: 160px;
+    opacity: 0.7;
+}
+
+.available svg{
+    height:48px;
+    width: 144px;
+    fill: var(--footer-list-color);
+    x: 0px;
+    y: 0px;
+    margin-top: 4px;
+}
+
+.appstore{
+    row-gap: 8px;
+}
+
+.googlesrch{
+    margin-top: 12px;
+}
+
+.business{
+    text-align: center;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;    
+}
+
+.business h2{
+    margin-bottom: 8px;
+    color: var(--btn-txt-color);
+    font-family: medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;    
+}
+
+.business span{
+    color: var(--footer-list-color);
+    font-family: medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;    
+    margin-top: 8px;
+}
+
+.helpyou{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.doingbussness{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------------- Footer section3 ----------------------------------------- */
+
+.compdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.icons{
+    flex: nowrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 28px;
+    width: 96px;
+    opacity: 0.7;
+}
+
+.icons svg{
+    width: 24;
+    height: 24;
+    fill: none;
+}
+
+.icons path{
+    fill: var(--footer-list-color);
+}
+
+.icontwitter, .iconinstagram{
+    margin-left: 12px;
+}
+
+/* ----------------------------------------- Footer section3 ----------------------------------------- */
+
+.txtboxfooter{
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 12px;
+    margin: 12px;
+    border: none;
+    background-color: var(--btn-icon-hover);
+    max-height: 32px;
+    width: 150px;
+}
+
+.txtfetch{
+    display: block;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.lbldropdowntext{
+    display: flex;
+    flex-direction: row;
+}
+
+.txtfooter{
+    font-family: medium;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    color: var(--text-color-default);
+    position: relative;
+    margin: 0px auto;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+.txtdrpdown{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    min-height: 8px;
+    background: transparent;
+    margin-left: -8px;
+}
+
+.txtdrpdown path{
+    margin-left: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------- Footer section4 ----------------------------------------- */
+
+.details{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icondoordash{
+    margin-bottom: -4px;
+}
+
+.details svg{
+    width: 32;
+    height: 18;
+    fill: var(--btn-txt-color);
+}
+
+.details span{
+    color: var(--footer-list-color);
+    font-family: medium;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-left: 16px;
+}
+
+.tab_topstrip{
+    display: none;
+}
+
+.img_tabdoor{
+    display: none;
+}
+
+.tab_scrollgiftdos{
+    display: none;
+}
+
+.tab_oppertunities{
+    display: none;
+}
+
+.tab_categories{
+    display: none;
+}
+
+/* ----------------------------------------------------- Screen view 768   --------------------------------------------------------- */
+
+@media screen and  (min-width: 768px){
+    .grid{
+        display: none;
+    }
+
+    .btn_desksignin{
+        display: none;
+    }
+
+    .btnmain{
+        display: none;
+    }
+
+    .wrappermain{
+        display: none;
+    }
+
+    .maindisp{
+        display: none;
+    }
+
+    .popup{
+        display: none;
+    }
+
+    .middlecontent{
+        display: none;
+    }
+
+    .imgcrave{
+        display: none;
+    }
+
+    .imglesscrave{
+        display: none;
+    }
+
+    .imgdoor{
+        display: none;
+    }
+
+    .scrollgift_dos{
+        display: none;
+    }
+
+    .oppertunities{
+        display: none;
+    }
+
+    .tab_categories{
+        display: none;
+    }
+
+    .tab_topstrip {
+        background-image: url("images/hero_desktop.png");
+        height: 650px;
+        padding: 0px 8px;
+        display: flex;
+        flex-flow: column;
+        position: relative;
+        align-items: center;
+        z-index: 1;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+    }
+
+    .btntabview{
+        padding-left: 16px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        top: 0px;
+        gap: 8px;
+        position: absolute;
+        margin-top: 16px;
+        z-index: 1;
+    }
+
+    .btnsignIn{
+        color: var(--btn-txt-color);
+        font-family: bold;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: inline-flex;
+        text-align: center;
+        white-space: nowrap;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 0px 12px;
+        position: relative;
+        min-height: 40px;
+        border-radius: 9999px;
+        border: none;
+        background-color: var(--btn-color-background);
+    }
+
+    .btnsignUp{
+        color: var(--text-color-soft);
+        font-family: bold;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: flex-end;
+        flex-direction: row;
+        padding: 0px 12px;
+        position: relative;
+        min-height: 40px;
+        max-width: 100%;
+        align-items: center;
+        border-radius: 9999px;
+        border: none;
+        background-color: var(--btn-txt-color);
+    }
+
+    .tabdoordash{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 18px;
+        width: 152px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        position: absolute;
+        left: 308px;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .doordash_name{
+        margin-left: 8px;
+    }
+
+    .tabmaincontent{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 33px;
+    }
+
+    .tabmaincontent h1{
+        font-family: TTNormsProCond-Blk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 900;
+        max-width: 350px;
+        font-size: 22px;
+        line-height: 28px;
+        color: var(--btn-txt-color);
+        text-align: center;
+        display: block;
+        position: relative;
+    }
+
+    .icontab{
+        margin-right: 12px;
+    }
+
+    .tab_txtmain{
+        display: flex;
+        min-height: 40px;
+        align-items: center;
+        width: 408px;
+        border-radius: 32px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 8px;
+        padding-left: 20px;
+        background-color: var(--btn-txt-color);
+        margin-top: 24px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .tab_txtmain input{
+        text-overflow: ellipsis;
+        font-family: medium;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        font-weight: 500;
+        border: none;
+        display: flex;
+        color: var(--text-color-default);
+        flex-direction: row;
+        flex-grow: 1;
+        max-width: 100%;
+        margin: 0 12px 0 auto;
+    }
+
+    .btn_tabtxtnext{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .btn_tabnext {
+        width: 40px;
+        display: flex;
+        min-height: 40px;
+        border-radius: 9999px;
+        border: none;
+        background-color: var(--btn-color-background);
+        color: var(--btn-txt-color);
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    } 
+
+    .btn_tabsignin{
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        padding: 0px 12px;
+        margin-top: 16px;
+        position: relative;
+        min-height: 32px;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 9999px;
+        background-color: var(--btn-txt-color);
+        border: none;
+        
+    }
+
+    .btn_tabsignin svg{
+        margin-right: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .services{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 32px 0;        
+    }
+
+    .scooter, .merchant, .experience{
+        display: flex;
+        flex-flow: row;
+        padding: 16px;
+        justify-content: center;
+    }
+
+    .imgscooter, .imgmerchant, .imgexperience{
+        margin-right: 64px;
+    }
+
+    .imgscooter img{
+        height: 124px;
+        width: 124px;
+    }
+
+    .imgmerchant img{
+        height: 124px;
+        width: 124px;
+    }
+
+    .imgexperience img{
+        height: 124px;
+        width: 124px;
+    }
+
+    .txtscooterdis, .txtmerchantdis, .txtexperiencedis{
+        display: block;
+        flex-flow: column;
+        max-width: 250px;         
+    }
+
+    .delivery{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+        margin-bottom: -59px;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+        top: 1px;        
+    }
+
+    .lessdelivery{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        max-width: 1184px;
+    }
+
+    .cravdis, .lessdis{
+        text-align: left;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+    }
+
+    .cravdis h2{
+        margin-top: 20px;
+        max-width: 90%;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .cravdis h3{
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.01px;
+    }
+
+    .cravdis span{
+        margin-top: 10px;
+        color: var(--text-color-default);
+        font-family: medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .cravdis button{
+        margin-top: 30px;
+        color: var(--btn-txt-color);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        height: 40px;
+        width: 146px;
+    }
+
+    .imgdesccrave{
+        display: inline;
+        width: 293.833px;
+        flex-flow: column;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .imgtablesscrave{
+        height: 500px;
+        object-fit: cover;
+        display: inline;
+        overflow-y: clip;
+        overflow-x: clip;
+        width: 302.885px;
+    }
+
+    .lessdis h2{
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .lessdis span{
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .lessdis button{
+        color: var(--btn-txt-color);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align:center;
+        display: block;
+        width: 127px;
+        height: 40px;
+        white-space: nowrap;
+        margin-top: 30px;
+    }
+
+    .colordelivery{
+        padding-top: 60px;
+    }
+
+    .grocery{
+        background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png) center center / cover;
+        position: relative;
+        height: 600px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .grocerylbl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 146px;
+        margin-bottom: 146px;
+    }
+    
+    .lblgrocery{
+        text-align: center;
+        color: var(--btn-txt-color);
+        max-width: 69%;
+        filter: drop-shadow(var(--btn-shadow-color) 0px 2px 8px);
+        margin-top: 20px;
+        font-family: bold;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+        flex-direction: column;
+    }
+
+    .lblgrocerydis1{
+        text-align: center;
+        color: var(--btn-txt-color);
+        filter: drop-shadow(var(--btn-shadow-color) 0px 2px 8px);
+        margin-top: 20px;
+        font-family: bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.01px;
+        display: block;
+        flex-direction: column;
+    }
+
+    .lblgrocerydis2{
+        margin-top: 10px;
+        text-align: center;
+        color: var(--btn-txt-color);
+        filter: drop-shadow(var(--btn-shadow-color) 0px 2px 8px);
+        font-family: medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        flex-direction: column;
+        max-width: 68%;
+    }
+
+    .btngrocery{
+        color: var(--btn-txt-color);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;        
+        padding: 0px 12px;
+        position: relative;
+        min-height: 40px;
+        border-radius: 9999px;
+        border: none;
+        margin-top: 30px;
+        width: 138.188px;
+        flex-direction: column;
+        padding-top: 1px;
+    }
+
+    .shopdoorstep{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+        max-width: 1184px;
+    }
+
+    .img_tabdoor{
+        height: 500px;
+        object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        width: 345.271px;
+    }
+    
+    .shopdoorstep{
+        padding-top: 60px;
+        margin-bottom: -36px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: -16px;
+    }
+
+    .lblshopdoorstep{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .lblshop1{
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .lblshop2{
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+  
+    .btnshop{
+        color: var(--btn-txt-color);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 12px;
+        position: relative;
+        height: 40px;
+        width: 100.323px;
+        flex-direction: column;
+        margin-top: 30px;
+        border-radius: 9999px;
+    }
+
+    .gift_dos{
+        display: flex;
+        justify-content: center;
+        background-color: var(--webcolor);
+        padding: 60px 20px 40px;
+    }
+
+    .lblgift_dos{
+        text-align: center;
+        max-width: 500px;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .tab_scrollgiftdos{
+        display: flex;
+        flex-flow: wrap;
+        max-width: 1184px;
+        background-color: var(--webcolor);
+        padding-bottom: 22px;
+    }
+
+    .tab_scrollgiftdos h2{
+        text-align: center;
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .tab_scrollgiftdos span{
+        text-align: center;
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        width: 344px;
+    }
+
+    .btn_tabbeauty{
+        color: var(--btn-txt-color);
+        background-color: var(--btn-color-background);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        height: 40px;
+        padding: 0px 12px;
+        white-space: nowrap;
+        border-radius: 9999px;
+        border: none;
+    }
+
+    .btn_tabflowers{
+        color: var(--btn-txt-color);
+        background-color: var(--btn-color-background);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        height: 40px;
+        padding: 0px 12px;
+        white-space: nowrap;
+        border-radius: 9999px;
+        border: none;
+    }
+
+    .btn_tabminibar{
+        color: var(--btn-txt-color);
+        background-color: var(--btn-color-background);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        min-height: 40px;
+        width: 123px;
+        padding: 0px 12px;
+        white-space: nowrap;
+        border-radius: 9999px;
+        border: none;
+        padding-top: 1px;
+    }
+
+    .btn_tabpets{
+        color: var(--btn-txt-color);
+        background-color: var(--btn-color-background);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        height: 40px;
+        padding: 0px 12px;
+        white-space: nowrap;
+        border-radius: 9999px;
+        border: none;
+        padding-top: 1px;
+    }
+
+    .lbl_tabminibar_age{
+        text-align: center;
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: medium;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .tab_beautyess, .tab_flowers, 
+    .tab_minibar, .tab_pets{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_tabbeauty, .img_tabflowers, 
+    .img_tabminibar, .img_tabpets {
+        object-fit: cover;
+        object-position: center center;
+        height: 344px;
+        width: 344px;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .img_tabscroll1, .img_tabscroll2,
+    .img_tabscroll3, .img_tabscroll4{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .lbl_tabbeauty, .lbl_tabpets, 
+    .lbl_tabminibar, .lbl_tabflowers{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 274px;
+        width: 344px;
+        max-width: 90%;
+    }
+
+    .unlockopp{
+        display: flex;
+        justify-content: center;
+        background-color: var(--btn-txt-color);
+        padding: 60px 20px 40px;
+    }
+
+    .lblunlockopp{
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .tab_oppertunities{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab_oppertunities h2{
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+        text-align: left;
+        max-width: 359px;
+        position: relative;
+    }
+
+    .tab_oppertunities span{
+        margin-top: 20px;
+        color: var(--text-color-default);
+        font-family: medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        text-align: left;
+    }
+
+    .tab_signin{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+        justify-content: center;
+        margin-bottom: -60px;
+        padding: 20px;
+    }
+
+    .lbl_tabsign{
+        display: block;
+        flex-direction: column;
+        text-align: left;
+        max-height: 256px;
+        max-width: 382.917px;
+        margin-top: 124px;
+        margin-bottom: 124px;
+    }
+
+    .img_tabsigndash{
+        height: 500px;
+        object-fit: cover;
+        max-width: 285.083px;
+        display: inline;
+    }
+
+    .tab_growbusi{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        padding: 20px;
+    }
+
+    .lbl_tabgrowbusi{
+        display: block;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .img_tabgrowdash{
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        width: 307.177px;        
+    }
+
+    .tab_colordelivery{
+        background-color: var(--webcolor);
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 60px;
+        z-index: -1;
+    }
+
+    .btn_tabsign{
+        position: relative;
+        color: var(--btn-txt-color);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 40px;
+        border-radius: 9999px;
+        border: none;
+        background-color: var(--btn-color-background);
+        margin-top: 30px;
+        padding: 0px 12px;
+        padding-top: 1px;
+    } 
+
+    .btn_tabgrow{
+        padding: 0px 12px;
+        position: relative;
+        color: var(--btn-txt-color);
+        font-family: bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: block;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 40px;
+        border-radius: 9999px;
+        border: none;
+        background-color: var(--btn-color-background);
+        margin-top: 30px;
+        padding-top: 1px;
+    }
+
+    /* ------------------------------------------------------------ */
+
+    .neighborhood{
+        max-width: 1130px;
+        padding: 48px 0;
+    }
+
+    .neighborhood h2{
+        text-align: center;
+        margin-bottom: 19px;
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        position: relative;
+        top: 1px;
+    }
+
+    .getlist{
+        margin-top: 20px;
+        gap: 25px;
+    }
+
+    .btnselect{
+        padding-top: 1px;
+        height: 40px;
+    }
+
+    .tab_cities{
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        border-bottom: 3px solid var(--text-color-default);
+    }   
+
+    .tab_cuisines, .tab_chains{
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        border-bottom: 2px solid var(--line_color);
+        
+
+    }
+
+    /* ----------------------------------------- Footer ----------------------------------------- */
+
+    .footredrdash{
+        padding:0 20px;
+    }
+
+    .popularcatogry{
+        padding: 32px 0;
+    }
+
+    .popularcatogry h2{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        justify-content: start;
+        text-align: left;       
+    }
+
+    .categories span{
+        display: block;
+        text-align: left;
+    }
+
+    .available{
+        padding-top: 20px;
+    }
+
+    .business{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        gap: 114px;
+    }
+
+    .knowus{
+        max-width: 113.625px;
+        white-space: nowrap; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;  
+    }
+
+    .knowus h2{
+        margin-bottom: 8px;
+    }
+
+    .helpyou{
+        max-width: 115.938px;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;
+        position: relative;
+        left: -1px;
+    }
+
+    .helpyou h2{
+        margin-bottom: 8px;
+    }
+
+    .doingbussness{
+        max-width: 170.062px;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+
+    .doingbussness h2{
+        margin-bottom: 8px;
+    }
+
+    .tab_footer{
+        padding: 32px 0;
+    }
+
+    .compdetails{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100px;
+        width: 728px;
+    }
+
+    .details{
+        margin-top: 0;
+    }
+
+    .icons{
+        position: relative;
+        top: -4px;
+    }
+
+    .txtboxfooter{ 
+        margin: 0px 12px;
+        position: relative;
+        top: -2px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .btn_tabsignin{
+        display: none;
+    }
+
+    .categories{
+        display: none;
+    }
+
+    .tabdoordash{
+        position: relative;
+        left: auto;
+        height: 24px;
+        margin: 24px 0;
+        width: 209px;
+    }
+
+    .doordash_icon{
+        width: 42px;
+        height: 24px;
+    }
+
+    .doordash_name{
+        width: 155px;
+        height: 18px;
+        margin-left: 12px;
+    }
+
+    .tabmaincontent{
+        position: relative;
+        top: 0px;
+    }
+
+    .tabmaincontent h1{
+        font-family: TTNormsProCond-Blk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 40px;
+        max-width: 750px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .btn_desksignin{
+        color: var(--text-color-default);
+        font-family: bold;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        padding: 0px 12px;
+        margin-top: 16px;
+        position: relative;
+        min-height: 32px;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 9999px;
+        background-color: var(--btn-txt-color);
+        border: none;
+        
+    }
+
+    .btn_desksignin svg{
+        margin-right: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .imgdesccrave{
+        width: 100%;
+    }
+
+    .imgtablesscrave{
+        width: 100%;
+    }
+
+    .cravdis{
+        margin-bottom: 1px;
+    }
+
+    .cravdis span{
+        margin-top: 10px;
+    }
+
+    .cravdis button{
+        padding-bottom: 1px;
+    }
+
+    .delivery{
+        top: 0px;
+    }
+
+    .colordelivery{
+        top: -1px;
+    }
+
+    .lessdis{
+        margin-bottom: 1px;
+    }
+
+    .lessdelivery{
+        margin-top: 0px;
+    }
+
+    .grocery{
+        margin-top: -1px;
+    }
+
+    .lblgrocery{
+        width: 49%;
+    }
+
+    .lblgrocerydis2{
+        width: 51%;
+    }
+
+    .img_tabdoor{
+        width: 100%;
+    }
+
+    .btnshop{
+        padding-bottom: 1px;
+    }
+
+    .tab_beautyess, .tab_flowers,
+    .tab_minibar, .tab_pets{
+        height: 746px;
+        width: 512px;
+    }
+
+    .img_tabflowers, .img_tabbeauty, 
+    .img_tabminibar, .img_tabpets{
+        width: 100%;
+        height: 472px;
+        object-fit: cover;
+    }
+
+    .img_tabscroll1, .img_tabscroll2,
+    .img_tabscroll3, .img_tabscroll4{
+        height: 472px;
+        object-fit: cover;
+    }
+
+    .lbl_tabbeauty, .lbl_tabflowers,
+    .lbl_tabminibar, .lbl_tabpets{
+        width: 100%;
+        height: 100%;
+    }
+
+    .tab_scrollgiftdos span{
+        width: 111%;
+    }
+
+    .img_tabsigndash{
+        max-width: 524px;
+    }
+
+    .tab_signin{
+        gap: 100px;
+    }
+
+    .tab_oppertunities span{
+        width: 110%;
+    }
+
+    .img_tabgrowdash{
+        width: 524px;
+    }
+    
+    .lbl_tabgrowbusi span{
+        width: 104%;
+    }
+
+    .neighborhood{
+        padding: 47px 0;
+    }
+
+    .neighborhood h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+   /* -------------------------------------------- desktop footer --------------------------------------------  */
+
+    .footredrdash{
+        width: 100%;
+    }
+
+    .popularcatogry{
+        flex: 1 1 0%;
+        display: flex;
+        padding-top: 31.5px 0;  
+    }
+
+    .popularcatogry h2{
+        margin-bottom: 10px;
+    }
+
+    .popularcatogry span{
+        margin-top: 6px;
+        margin-bottom: 2px;
+    }
+
+    .tab_categories{
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .tab_section1, .tab_section2,
+    .tab_section3, .tab_section4{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0%;
+        align-items: flex-start;
+    }
+
+    .tab_available{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .business{
+        flex: 1 1 0%;
+        gap: 0;
+        padding-top: 29px;
+        transform: translateY(0.9px);
+    }
+
+    .business h2{
+        margin-bottom: 11px;
+        /* transform: translatey(0.9px); */
+    }
+
+    .business span{
+        margin-top: 5px;
+        padding-bottom: 3px;
+    }
+
+    .available{
+        flex: 1 1 0%;
+        align-items: end;
+        padding-top: 30px;
+    }
+
+    .compdetails{
+        display: flex;
+        justify-content: space-between;
+        min-width: 100%;
+        transform: translateY(-1px);
+        height: unset;
+        padding-top: 32px;
+        padding-bottom: 29px;
+    }
+
+    .icons{
+        margin-top: 1px;
+    }
+
+    .txtboxfooter{
+        margin-top: 1px;
+    }
+
+    .details{
+        padding-bottom: 2px;
+    }
+
+}
+
+@media screen and (min-width:1184px){
+
+ 
+
+    .tab_topstrip{
+        width: 100%;
+    }
+
+    .servicecontainer{
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .services{
+        flex-direction: row;
+        margin: 96px 0;
+        padding-top: 12px;
+    }
+
+    .scooter, .merchant, .experience{
+        flex-flow: column;
+    }
+
+    .scooter, .merchant{
+        padding-bottom: 60px;
+    }
+
+    .experience{
+        padding-bottom: 20px;
+    }
+
+    .imgscooter, .imgmerchant, .imgexperience{
+        display: flex;
+        justify-content: center;
+        margin-right: 62.9px;
+    }
+
+    .imgscooter img, .imgmerchant img, .imgexperience img{
+        height: 154px;
+        width: 154px;
+    }
+
+    .txtscooterdis, .txtmerchantdis, .txtexperiencedis{
+        display: block;
+        text-align: center;
+    }
+
+    .txtscooterdis h2, .txtmerchantdis h2, .txtexperiencedis h2{
+        text-align: center;
+    }
+
+    .txtscooterdis h3, .txtmerchantdis h3, .txtexperiencedis h3{
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .btnstart {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Start{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    .btnmerchant{
+        padding-left: 63px;
+    }
+
+    .btnexperience{
+        padding-left: 63px;
+    }
+
+    .cravdis button {
+        padding-top: 1px;
+    }
+
+    .grocerylbl{
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .img_tabdoor{
+        min-width: 684px;
+    }
+
+    .tab_giftdos_container{
+        background-color: var(--webcolor);
+        max-width: 100%;
+    }
+
+    .tab_scrollgiftdos{
+        max-width: 1184px;
+        max-height: 1630px;    
+    }
+
+    .tab_beautyess, .tab_flowers, 
+    .tab_minibar, .tab_pets {
+        min-width: 50%;
+        max-width: 50%;
+        height: auto;
+    }
+
+    .lbl_tabbeauty, .lbl_tabflowers, 
+    .lbl_tabminibar, .lbl_tabpets{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_tabflowers, .img_tabbeauty, 
+    .img_tabminibar, .img_tabpets{
+        height: 552px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .img_tabscroll1, .img_tabscroll2,
+    .img_tabscroll3, .img_tabscroll4{        
+        min-height: 552px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .tab_signin{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .img_tabsigndash{
+        max-width: 684px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .tab_colordelivery{
+        width: 100%;
+    }
+
+    .tab_growbusi {
+        display: flex;
+        flex-direction: row;
+        max-width: 1184px;
+    }
+
+    .img_tabgrowbusi{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .img_tabgrowdash{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .lbl_tabgrowbusi{
+        max-width: 400px;
+    }
+
+    .neighborhood{
+        max-width: 1130px;
+        padding: 47px 0;
+        margin: 0px auto;
+    }
+
+    .footredrdash{
+        max-width: 1160px;
+        padding: 0 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popularcatogry {
+        padding: 31.9px 0;
+        padding-bottom: 36px;
+    }
+
+    .popularcatogry h2{
+        margin-bottom: 10.5px;
+        /* margin-top: 1px; */
+    }
+
+    .popularcatogry span{
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+
+    .available {
+        padding-top: 25px;
+    }
+
+    .business {
+        flex: 1 1 0%;
+        gap: 26px;
+        padding-top: 24px;
+    }
+
+    .business h2 {
+        margin-bottom: 13.5px;
+    }
+
+    .business span{
+        margin-top: 3.45px;
+        padding-bottom: 4.5px;
+    }
+
+    .details{
+        padding-bottom: 3px;
+    }
+
+    .details span{
+        padding-bottom: 0px;
+    }
+
+    .icondoordash{
+        margin-top: 0px;
+    }
+
+    .compdetails{
+        padding-top: 31px;
+        padding-bottom: 28.3px;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .delivery{
+        margin-left: 101px;
+        max-width: 1184px;
+    }
+
+    .imgdesccrave{
+        max-width: 695.021px;
+    }
+
+    .colordelivery{
+        width: 100%;
+    }
+
+    .imgtablesscrave{
+        max-width: 724px;
+    }
+
+    .lessdelivery{
+        margin-left: 108px;
+    }
+
+    .imglessdelivery{
+        width: auto;
+    }
+
+    .grocerylbl{
+        max-width: 1029px;
+    }
+
+    .shopdoorstep{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1195px;
+    }
+
+    .img_tabdoor{
+        width: 546.25px;
+    }
+
+    .tab_scrollgiftdos{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     .tab_signin{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img_tabsigndash{
+        width: 695.021px;
+    }
+
+     .tab_growbusi{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .img_tabgrowbusi{
+        max-width: 724px;
+    }
+
+    /* ---------------------------------------- footer ---------------------------------------- */
+
+    .popularcatogry {
+        padding: 32.5px 0;
+        padding-bottom: 36px;
+    }
+    
+    .popularcatogry h2{
+        margin-bottom: 11px;
+    }
+    .popularcatogry span {
+        margin-top: 5px;
+    }
+
+    .business span{
+        margin-top: 2.45px;
+        padding-bottom: 5.5px;
+    }
+
+    .compdetails{
+        padding-top: 31.5px;
+    }
+
+    .txtboxfooter{
+        margin-top: 0px;
+    }
+
+    .icons {
+        margin-bottom: 1.2px;
+    }
+
+}
+
+@media screen and (min-width: 2560px){
+
+    .delivery{
+        margin-left: 130px;
+        margin-right: auto;
+        width: 1184px;
+    }
+
+    .imgcravdelivery{
+        width: 699px;
+    }
+
+    .imgdesccrave{
+        width: 699px;
+    }
+
+    .lessdelivery{
+        justify-content: center;
+        margin-left: 128px;
+    }
+
+    .imglessdelivery{
+        width: 723px;
+    }
+
+    .lessdelivery{
+        max-width: 695.021px;
+    }
+
+    .shopdoorstep{
+        width: 1200px;
+    }
+
+    .imgdoorstep{
+        width: 695.021px;
+    }
+
+    .img_tabdoor{
+        width: fit-content;
+    }
+
+    .tab_signin{
+        max-width: 1195px;
+    }
+
+    .img_tabsigndash{
+        max-width: 695.021px;
+    }
+
+    .tab_growbusi{
+        max-width: 1202px;
+        margin-left: 668px;
+    }
+
+    .img_tabgrowdash{
+        width: 724px;
+    }
+
+    .neighborhood h2{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .txtboxfooter{
+        margin-top: 1px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
