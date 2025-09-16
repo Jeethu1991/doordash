@@ -2153,7 +2153,7 @@ footer{
         display: flex;
         flex-direction: row;
         gap: 60px;
-        max-width: 1184px;
+        max-width: 100%;
     }
 
     .cravdis, .lessdis{
@@ -2268,6 +2268,7 @@ footer{
 
     .colordelivery{
         padding-top: 60px;
+        width: 100%;
     }
 
     .grocery{
@@ -3485,27 +3486,6 @@ footer{
 
     /* ---------------------------------------- footer ---------------------------------------- */
 
-    /* .popularcatogry {
-        padding: 32.5px 0;
-        padding-bottom: 36px;
-    }
-    
-    .popularcatogry h2{
-        margin-bottom: 11px;
-    }
-    .popularcatogry span {
-        margin-top: 5px;
-    }
-
-    .business span{
-        margin-top: 2.45px;
-        padding-bottom: 5.5px;
-    } */
-
-    /* .compdetails{
-        padding-top: 31.5px;
-    } */
-
     .lbldropdowntext{
         margin-top: 2px;
     }
@@ -3531,9 +3511,9 @@ footer{
     .imgdesccrave{
         width: 699px;
     }
-
+    
     .colordelivery {
-        max-width: 100%;
+        width: 100%;
     }
 
     .lessdelivery{
