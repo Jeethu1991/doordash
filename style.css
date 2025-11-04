@@ -775,7 +775,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    min-width: 90%;
+    /* min-width: 90%; */
     align-items: center;
     margin-bottom: -300px;
     z-index: 999;
@@ -3437,6 +3437,7 @@ footer{
 
     .lessdelivery{
         margin-left: 108px;
+        justify-content: center;
     }
 
     .imglessdelivery{
@@ -3501,9 +3502,11 @@ footer{
 @media screen and (min-width: 2560px){
 
     .delivery{
-        margin-left: 130px;
-        margin-right: auto;
-        width: 1184px;
+        /* margin-left: 130px; */
+        /* margin-right: auto; */
+        /* width: 1184px; */
+        margin-inline: auto;
+        justify-content: center;
     }
 
     .imgcravdelivery{
