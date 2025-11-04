@@ -1131,6 +1131,8 @@ body {
     display: flex;
     flex-direction: row;
     background-color: var(--webcolor);
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .scrollgift_dos img{
